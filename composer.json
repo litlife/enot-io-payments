@@ -1,7 +1,7 @@
 {
   "name": "litlife/enot-io-payments",
   "description": "Package for working with the payment aggregator api enot.io",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "authors": [
     {

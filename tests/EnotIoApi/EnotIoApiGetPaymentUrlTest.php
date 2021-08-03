@@ -43,7 +43,7 @@ class EnotIoApiGetPaymentUrlTest extends TestCase
             'cd', 0, 'https://success.url', 'https://fail.url');
 
         $this->assertEquals(
-            'https://enot.io/pay?m=424242&oa=42.00&o=4242&s=1c506c490bcdf5a2db57bb0f5a158381&cr=EUR&c=Some+comment&cf%5Bkey%5D=value&cf%5Bping%5D=pong&p=cd&ap=0&success_url=https%3A%2F%2Fsuccess.url&fail_url=https%3A%2F%2Ffail.url',
+            'https://enot.io/pay?m=424242&oa=42&o=4242&s=1c506c490bcdf5a2db57bb0f5a158381&cr=EUR&c=Some+comment&cf%5Bkey%5D=value&cf%5Bping%5D=pong&p=cd&ap=0&success_url=https%3A%2F%2Fsuccess.url&fail_url=https%3A%2F%2Ffail.url',
             $url);
     }
 }

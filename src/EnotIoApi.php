@@ -482,6 +482,6 @@ class EnotIoApi
      */
     public function moneyFormat(float $number) :string
     {
-        return number_format($number, 2, '.', '');
+        return (string)$number;
     }
 }

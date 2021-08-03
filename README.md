@@ -34,7 +34,7 @@ print_r($url);
 
 Output:
 
-`https://enot.io/pay?m=424242&oa=42.2&o=4242&s=8a7d38fa09963aaadd32a8422fbfd397&cr=RUB&c=Comment+%26+text`
+`https://enot.io/pay?m=424242&oa=42.20&o=4242&s=8a7d38fa09963aaadd32a8422fbfd397&cr=RUB&c=Some+text`
 
 ### Notifications after payment (webhook, callback)
 

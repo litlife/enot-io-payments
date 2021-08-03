@@ -164,6 +164,8 @@ class EnotIoApi
         if (empty($this->secret_key))
             throw new RuntimeException('Secret key is not defined');
 
+        $orderAmount = $this->moneyFormat($orderAmount);
+
         $query = http_build_query([
             'm' => $this->merchant_id,
             'oa' => $orderAmount,
@@ -470,5 +472,16 @@ class EnotIoApi
     public function payoutStatus(array $params): PayoutStatusRequest
     {
         return new PayoutStatusRequest($params);
+    }
+
+    /**
+     * Formatting a money number to a standard
+     *
+     * @param float $number
+     * @return string
+     */
+    public function moneyFormat(float $number) :string
+    {
+        return number_format($number, 2, '.', '');
     }
 }

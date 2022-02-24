@@ -9,6 +9,12 @@
       "email": "litlife@yandex.ru"
     }
   ],
+  "require": {
+    "php": "^7.3",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "guzzlehttp/guzzle": "^7.0"
+  },
   "require-dev": {
     "phpunit/phpunit": "^9.5"
   },
@@ -21,12 +27,6 @@
     "psr-4": {
       "Litlife\\EnotIoPayments\\Tests\\": "tests"
     }
-  },
-  "require": {
-    "php": "^7.3",
-    "ext-json": "*",
-    "ext-mbstring": "*",
-    "guzzlehttp/guzzle": "^7.0"
   },
   "scripts": {
     "test": "phpunit"

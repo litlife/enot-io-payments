@@ -1,7 +1,7 @@
 {
   "name": "litlife/enot-io-payments",
   "description": "Package for working with the payment aggregator api enot.io",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "authors": [
     {
@@ -10,7 +10,7 @@
     }
   ],
   "require": {
-    "php": "^7.3",
+    "php": "^7.3|^8.0",
     "ext-json": "*",
     "ext-mbstring": "*",
     "guzzlehttp/guzzle": "^7.0"
